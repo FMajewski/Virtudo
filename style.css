@@ -1,0 +1,214 @@
+html {
+    font-family: 'Libre Baskerville', serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+@media (max-width: 1080px) {
+    .container {
+        margin: 0 auto;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+.header {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0px;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
+    z-index: 1;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+    height: 70px;
+    transition: 0.5s;
+    margin-left: 50px;
+}
+
+.nav_list {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 40px;
+    width: 170px;
+    border-radius: 35px;
+    color: white;
+    margin-left: 5px;
+    margin-right: 8px;
+    margin-top: 2px;
+    transition: 0.5s;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav_item:hover {
+    background: black;
+    transition: 0.3s;
+    color: white;
+}
+
+.menu-toggle {
+
+    background: none;
+    border: 0;
+    cursor: pointer;
+    z-index: 99;
+    position: absolute;
+
+}
+.nav_list_items{
+    text-decoration: none;
+}
+
+.toggle {
+    background: #fff;
+    display: block;
+    height: 16px;
+    width: 80px;
+    margin: 5px;
+}
+.logo{
+    width: 180px;
+    height: 60px;
+    margin-right: 50px;
+}
+
+@media (min-width: 1080px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 1080px) {
+    .menu {
+        transition: 0.5s;
+        position: absolute;
+        top: 0;
+        left: -700px;
+        width: 700px;
+        background-color: rgba(0, 0, 0, 0.7);
+        margin: 0;
+        height: 100vh;
+        justify-content: center;
+        color: black;
+    }
+    .menu .nav_list {
+        flex-direction: column;
+        margin-top: 100px;
+        margin-left: 20px;
+    }
+    .menu .nav_list .nav_list_items {
+        text-align: left;
+        font-size: 50px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .menu .nav_list .nav_list_items .nav_item {
+        height: 90px;
+        width: 500px;
+        font-weight: 500px;
+        margin-right: 0;
+        margin-left: 0;
+        font-size: 50px;
+    }
+    .menu-toggle {
+        z-index: 99;
+        margin-left: 20px;
+        margin-top: 16px;
+    }
+    .menu.show {
+        transform: translate(100%);
+    }
+    .header {
+        height: 120px;
+    }
+    .logo{
+        height: 108px;
+        width: 290px;
+    }
+}
+
+@media (max-width: 1080px) {
+    .nav_item {
+        height: 30px;
+        width: 150px;
+        font-weight: 500px;
+        margin-right: 6px;
+        margin-left: 3px;
+        font-size: 15px;
+    }
+}
+
+/*burger menu*/
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 75px;
+    height: 10px;
+    background-color: white;
+    margin: 12px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-20px, 15px);
+    transform: rotate(-45deg) translate(-20px, 15px);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-15px, -11px);
+    transform: rotate(45deg) translate(-15px, -11px);
+}
+
+/*section1*/
+
+.section-1{
+    background-image: url("images/apartment-architecture-art-276724.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_info{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+
