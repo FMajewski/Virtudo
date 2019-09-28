@@ -5,6 +5,7 @@
     <title>Virtudo - 3d marketing</title>
     <script src="app.js"></script>
     <link href="style.css" rel="stylesheet">
+
 </head>
 <body>
 <header class="header">
@@ -12,9 +13,9 @@
         <nav class="menu">
             <ul class="nav_list">
                 <li class="nav_list_items"><a href="#home" class="nav_item">HOME</a></li>
-                <li class="nav_list_items"><a href="#omnie" class="nav_item">O MNIE</a></li>
-                <li class="nav_list_items"><a href="#projekty" class="nav_item">PROJEKTY</a></li>
-                <li class="nav_list_items"><a href="#technologie" class="nav_item">TECHNOLOGIE</a></li>
+                <li class="nav_list_items"><a href="#omnie" class="nav_item">O NAS</a></li>
+                <li class="nav_list_items"><a href="#projekty" class="nav_item">REALIZACJE</a></li>
+                <li class="nav_list_items"><a href="#technologie" class="nav_item">WSPÓŁPRACA</a></li>
                 <li class="nav_list_items"><a href="#kontakt" class="nav_item">KONTAKT</a></li>
             </ul>
 
@@ -27,21 +28,47 @@
     </div>
     <img src="images/Virtudo.pl%20(3).png" class="logo">
 </header>
-<section class="section-1">
+<section class="section-1" class="parallax-window" data-parallax="scroll"
+         data-image-src="images/apartment-architecture-art-276724.jpg">
     <div class="main_info">
         <div class="main_title" data-aos="fade-in" data-aos-delay="800" data-aos-offset="200"
              data-aos-duration="1300">
-            <span>MASAŻ LOMI LOMI NUI</span>
+            <span>Virtudo</span>
             <span class="main_underline"></span>
         </div>
         <div class="main_text" data-aos="fade-in" data-aos-delay="800" data-aos-offset="200"
              data-aos-duration="1600">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut consequuntur ea excepturi facilis
-                ipsam magnam numquam omnis reiciendis totam unde. Culpa iste nisi praesentium quae quaerat
-                repellendus sit velit voluptatem.</p>
+            <p>Zajmujemy się marketingiem nieruchomości. Specjalizujemy się w skanach 3D.</p>
         </div>
+        <button class="rezerwacja">Zarezerwuj</button>
+    </div>
+</section>
+<section class="section-2">
+    <div class="description1">
+        Virtudo świadczy profesjonalne usługi skanowania 3d dla rynku nieruchomości. <br>
+        Specjalizujemy się w tworzeniu wirtualnych wizyt 3D po wnętrzach nieruchomości, wykorzystując najnowsze i
+        najbardziej zaawansowane technologie. Naszym głównym celem jest zapewnienie wyjątkowej jakości usług w
+        przystępnej cenie.
+    </div>
+</section>
+<header class="site-header">
+<iframe id="yt-player"
+        src="https://www.youtube.com/embed/Ebyz8xxoK1w?autoplay=1&modestbranding=1&controls=0&showinfo=0&rel=0&enablejsapi=1&version=3&loop=0&playerapiid=ytplayer&allowfullscreen=true&wmode=transparent&iv_load_policy=3&html5=1&playlist=iApVVKsF94E&disablekb=true"
+        frameborder="0"></iframe>
+<div class="video-overlay"></div>
+<div class="content">
+</div>
+</header>
+<section class="section-3">
+    <div>Kim są nasi klienci</div>
+    <div class="customers">
+        <div class="cust">biura</div>
+        <div class="cust">hotele</div>
+        <div class="cust">komercyjne</div>
     </div>
 </section>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="parallax.js-1.5.0/parallax.js"></script>
 </body>
 </html>
