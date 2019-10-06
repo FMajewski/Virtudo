@@ -20,8 +20,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
     $('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
 
-
-
     $(window).on('resize load', function() {
         $('.site-header iframe').each(function() {
             var self = $(this);
@@ -29,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
             self.css({
                 width: container.width() + "px",
-                height: container.width() * (8 /16) + 'px',
+                height: container.width() * (9/16) + 'px',
                 position: 'absolute',
                 marginTop: -container.width() * (9/32) + 'px',
                 top: '50%'
@@ -43,21 +41,22 @@ document.addEventListener("DOMContentLoaded", function(){
     tag.src = "https://www.youtube.com/player_api";
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-``
+
     var player;
     function onYouTubePlayerAPIReady() {
         player = new YT.Player('yt-player', {
             autoplay : 1,
-            videoId: 'yZM5VAKi5vU',
+            videoId: 'GobXBtaz9o4',
             playerVars : {
                 'autoplay' : 1,
+                'mute' : 1,
                 'rel' : 0,
                 'showinfo' : 0,
                 'showsearch' : 0,
                 'controls' : 0,
                 'loop' : 1,
                 'enablejsapi' : 1,
-                'playlist': 'yZM5VAKi5vU'
+                'playlist': 'GobXBtaz9o4'
             },
             events: {
                 "onReady": onPlayerReady,
@@ -72,13 +71,12 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 
     function onPlayerStateChange(event) {
-        var id = 'Ebyz8xxoK1w';
+        var id = 'GobXBtaz9o4';
 
         if(event.data === YT.PlayerState.ENDED){
             player.loadVideoById(id);
         }
     }
-
 
 });
 

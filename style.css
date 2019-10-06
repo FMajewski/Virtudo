@@ -251,7 +251,6 @@ html {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 500px;
     background-color: dimgray;
 }
 .customers {
@@ -277,6 +276,12 @@ html {
     left: 0;
     right: 0;
     opacity: 0.5;
+}
+@media (max-width: 1080px) {
+    .site-header{
+        height: 430px;
+    }
+
 }
 
 
